@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -9,23 +9,23 @@
 }
 
 h2 {
-  font-size:2rem;
-  color:#172b4d;
+  font-size: 2rem;
+  color: #172b4d;
 }
 
 p {
-  color:#172b4d;
-  font-size:1.2rem;
+  color: #172b4d;
+  font-size: 1.2rem;
 }
 
 hr {
-  border:1px solid #36b37e;
-  width:50px;
-  margin-top:24px;
+  border: 1px solid #36b37e;
+  width: 50px;
+  margin-top: 24px;
 }
 
 i {
-  font-size:1rem;
+  font-size: 1rem;
 }
 
 .menu {
@@ -93,21 +93,17 @@ main {
   justify-content: center;
 }
 
-@media all and (min-width:768px){
+@media all and (min-width: 768px) {
   .nav {
     width: 100%;
   }
+
   .nav ul {
     list-style: none;
     border: 1px solid black;
     display: flex;
     width: 500px;
     justify-content: center;
-    
-  }
-
-  .nav li {
-
   }
 
   .miss-desktop {
