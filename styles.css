@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -9,30 +9,28 @@
 }
 
 h2 {
-  font-size: 2rem;
-  color:#172B4D;
+  font-size:2rem;
+  color:#172b4d;
 }
 
 p {
-  color:#172B4D;
-  font-size: 1.2rem;
+  color:#172b4d;
+  font-size:1.2rem;
 }
 
 hr {
-  border: 1px solid #36B37E;
-  width: 50px;
-  margin-top: 24px
+  border:1px solid #36b37e;
+  width:50px;
+  margin-top:24px;
 }
 
 i {
-  font-size: 1rem;
+  font-size:1rem;
 }
-
 
 .menu {
   margin: 24px;
   color: black;
-  
 }
 
 .header {
@@ -46,7 +44,7 @@ i {
   font-size: 1.2rem;
   font-weight: 500;
   margin: 24px;
-  color: #28352F;
+  color: #28352f;
 }
 
 .nav ul {
@@ -70,7 +68,7 @@ main {
 }
 
 .green {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .socials {
@@ -87,15 +85,13 @@ main {
   width: 40px;
   border-radius: 50%;
   outline: none;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   background-color: white;
   margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
 
 @media all and (min-width:768px){
   .nav {
