@@ -40,6 +40,7 @@
   - Introduction
   - Recent Works
   - About Me
+  - Contact Form
 
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
