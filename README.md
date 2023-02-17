@@ -111,7 +111,7 @@ I would like to thank my team mates.
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
   
 ## :memo: License
-No license yet.
+[License](https://github.com/newhoteng/Portfolio/blob/main/LICENSE)
 
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
