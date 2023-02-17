@@ -59,6 +59,10 @@ i {
   color: #28352f;
 }
 
+ul {
+  list-style: none;
+}
+
 .nav ul {
   display: none;
 }
@@ -106,7 +110,7 @@ main {
   justify-content: center;
 }
 
-.card{
+.card {
   display: grid;
   grid-template: repeat(6, 474px) / 1fr 327px 1fr;
   row-gap: 24px;
@@ -176,7 +180,6 @@ main {
 .tab {
   font-size: 12px;
   margin: 10px;
-  
 }
 
 .white .tab {
@@ -245,6 +248,8 @@ main {
   border-radius: 50%;
   background-color: #fff;
   margin: 40px 0 64px;
+  display: flex;
+  justify-content: center;
 }
 
 .but2 {
@@ -313,15 +318,6 @@ textarea {
 
 .headline p {
   line-height: 28px;
-}
-
-ul {
-  list-style: none;
-}
-
-.circle {
-  display: flex;
-  justify-content: center;
 }
 
 .circle img {
