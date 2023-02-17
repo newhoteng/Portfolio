@@ -29,8 +29,16 @@ hr {
   margin-top: 24px;
 }
 
-i {
-  font-size: 1rem;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.socials img {
+  width: 20px;
+  height: 20px;
 }
 
 .menu {
@@ -81,8 +89,8 @@ main {
   align-items: center;
 }
 
-.socials i {
-  margin: 20px;
+.socials img {
+  margin: 10px;
 }
 
 .arrow {
