@@ -35,10 +35,6 @@ hr {
   border-radius: 4px;
 }
 
-i {
-  font-size: 1rem;
-}
-
 .menu {
   margin: 24px;
   color: black;
@@ -93,8 +89,10 @@ main {
   justify-content: center;
 }
 
-.socials i {
-  margin: 20px;
+.socials img {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .arrow {
