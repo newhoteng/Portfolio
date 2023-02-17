@@ -212,7 +212,7 @@ main {
   border-radius: 4px;
   margin: 4px;
   padding: 4px;
-  color: #36b37e; 
+  color: #36b37e;
 }
 
 form {
@@ -222,7 +222,15 @@ form {
   align-items: center;
 }
 
-input, textarea, select {
+input {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 24px;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
   width: 100%;
   min-height: 50px;
   margin-top: 24px;
