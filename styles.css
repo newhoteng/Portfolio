@@ -8,6 +8,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  background: url("Images/illustration-contact-form.svg") right 6270px no-repeat;
+}
+
 h1 {
   font-size: 2.5rem;
   color: #172b4d;
@@ -27,21 +31,21 @@ a {
   text-decoration: none;
 }
 
-hr {
+.green-line {
   border: 2px solid #36b37e;
   width: 50px;
   margin-top: 24px;
   margin-bottom: 60px;
-  border-radius: 2px;
+  border-radius: 24px;
 }
 
-.black {
+.black-line {
   margin: 0 auto;
-  width: 120px;
-  border-color: black;
-  margin-bottom: 10px;
+  width: 134px;
+  border: 2.5px solid #0d151e;
+  margin-bottom: 8px;
   margin-top: 300px;
-  border-radius: 4px;
+  border-radius: 24px;
 }
 
 .menu {
@@ -74,7 +78,7 @@ ul {
 }
 
 main {
-  background: white url("Images/header-illsutration-mobile@2x.png") 0 0 no-repeat;
+  background: url("Images/header-illsutration-mobile@2x.png") 0 0 no-repeat;
   background-size: contain;
 }
 
@@ -222,10 +226,6 @@ main {
   margin: 0 12px 24px;
 }
 
-.form h2 {
-  margin-top: 60px;
-}
-
 .cont {
   position: relative;
   height: 50px;
@@ -269,35 +269,48 @@ main {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  margin: 24px;
-  align-items: center;
-}
-
-input {
-  width: 100%;
-  min-height: 50px;
-  margin-top: 24px;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-textarea {
-  width: 100%;
-  min-height: 50px;
-  margin-top: 24px;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-input[type="submit"] {
-  width: 130px;
+  width: 327px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid red;
 }
 
 input,
 textarea {
+  font-size: 15px;
+  font-weight:400;
+  line-height: 24px;
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
   box-sizing: border-box;
+  border: 1px solid #d0d9d4;
+  margin-top: 24px;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 1px solid #60c095;
+  height: 116px;
+  padding: 12px;
+  position: relative;
+}
+
+::-webkit-resizer {
+  background: url("Images/Union.svg");
+  border: 2px solid black;
+}
+
+input::placeholder {
+  color: #6b778c;
+}
+
+textarea::placeholder {
+  color: #091e42;
+}
+
+.submit {
+  margin-bottom: 46px;
 }
 
 .about {
@@ -309,8 +322,9 @@ textarea {
   margin-top: 30px;
 }
 
-.form {
-  background: url("Images/illustration-contact-form.svg") right 600px no-repeat;
+.contact {
+  border: 1px solid green;
+  margin-top: 60px;
 }
 
 .about p {
