@@ -39,7 +39,7 @@
       </ul>
       <button class="arrow item"><i class="fa fa-solid fa-chevron-down"></i></button>
       <h2 class="item">My Recent Works</h2>
-      <hr/>
+      <hr class="green-line"/>
     </section>
     <section class="card grid">
       <div class="item img-holder grid-item-1">
@@ -171,15 +171,17 @@
         </ul>
       </div>  
     </section>
-    <section class="form">
-      <h2 class="contact center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form action="">
-        <input id="name" type="text" required placeholder="Full name" />
-        <input id="email" type="email" required placeholder="Email address" />
-        <textarea name="suggestions" placeholder="Enter text here" rows="4"></textarea></label>
-        <input class= "see" id="submit" type="Submit" value="Get in touch">
+    <section class="contact">
+      <h2 class="center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+     
+      <form action="https://formspree.io/f/xdovglob" method="post">  
+        <input type="text" id="name" name="user_name" required placeholder="Full name" maxlength="30"/>        
+        <input type="email" id="mail" name="user_email" required placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+        <textarea id="msg" name="user_message" required placeholder="Enter text here" maxlength="500"></textarea>
+        <button class="see submit" type="submit">Get in touch</button>
       </form>
-      <ul class="socials item">
+        
+      <ul class="socials item ">
         <li><img src="Images/twitter.svg" alt=""></li>
         <li><img src="Images/Linkedin icon.svg" alt=""></li>
         <li><img src="Images/medium.svg" alt=""></li>
@@ -187,7 +189,7 @@
         <li><img src="Images/angellist.svg" alt=""></li> 
       </ul>
       <p class="center">harriet.oteng@gmail.com</p>
-      <hr class="black">
+      <hr class="black-line">
     </section>
   </main>  
 </body>
