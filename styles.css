@@ -272,7 +272,6 @@ form {
   width: 327px;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid red;
 }
 
 input,
@@ -297,8 +296,7 @@ textarea {
 }
 
 ::-webkit-resizer {
-  background: url("Images/Union.svg");
-  border: 2px solid black;
+  background: url("Images/Union.svg") no-repeat;
 }
 
 input::placeholder {
@@ -325,6 +323,10 @@ textarea::placeholder {
 .contact {
   border: 1px solid green;
   margin-top: 60px;
+}
+
+.contact p {
+  color: #42526e;
 }
 
 .about p {
