@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url("Images/illustration-contact-form.svg") right 6270px no-repeat;
+  background: url("Images/illustration-contact-form.svg") right 6300px no-repeat;
 }
 
 h1 {
@@ -270,8 +270,11 @@ main {
 
 form {
   width: 327px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 58px auto 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 input,
@@ -284,7 +287,6 @@ textarea {
   padding: 15px 16px;
   box-sizing: border-box;
   border: 1px solid #d0d9d4;
-  margin-top: 24px;
   border-radius: 4px;
 }
 
@@ -308,7 +310,7 @@ textarea::placeholder {
 }
 
 .submit {
-  margin-bottom: 46px;
+  margin-top: 0;
 }
 
 .about {
@@ -321,8 +323,12 @@ textarea::placeholder {
 }
 
 .contact {
-  border: 1px solid green;
   margin-top: 60px;
+}
+
+.contact h2 {
+  margin-bottom: 0;
+  line-height: 52px;
 }
 
 .contact p {
