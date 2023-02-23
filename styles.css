@@ -561,4 +561,11 @@ textarea::placeholder {
   /*textarea::placeholder {
     color: #091e42;
   }*/
+
+  .black-line {
+    margin: 0 auto;
+    width: 100%;
+    border: 0.5px solid #dfe1e6;
+    margin-bottom: 71px;
+  }
 }
