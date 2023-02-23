@@ -429,8 +429,8 @@ textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-  } 
-
+  }
+  
   .headline {
     width: 920px;
     height: 756px;
@@ -510,27 +510,27 @@ textarea::placeholder {
     grid-row: 1 / 2;
     grid-column: 1 / 1;
   }
-  
+
   .grid-item-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
-  
+
   .grid-item-3 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
   }
-  
+
   .grid-item-4 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
-  
+
   .grid-item-5 {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
-  
+
   .grid-item-6 {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
@@ -543,7 +543,7 @@ textarea::placeholder {
   .about {
     background: none;
   }
-  
+
   .about h2 {
     margin-top: 30px;
   }
