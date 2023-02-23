@@ -24,18 +24,21 @@
   <main>
     <section class="headline">
       <div class="item intro">
-        <h1>Hey there. I'm Harriet</h1>
+        <h1 class="first">Hey there. I'm Harriet</h1>
         <h1 class="green-intro-text">I'm a software developer</h1>
       </div>
-      <p> 
+      <p class="headline-p-mobile"> 
         I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
       </p>
+      <p class="headline-p-desktop"> 
+        I can help you build a product , feature or website Look through some of my work and <br> experience! If you like what you see and have a project you need coded, <br> don’t hestiate to contact me.
+      </p>
       <ul class="socials item">
-        <li><img src="Images/twitter.svg" alt=""></li>
-        <li><img src="Images/Linkedin icon.svg" alt=""></li>
-        <li><img src="Images/medium.svg" alt=""></li>
-        <li><img src="Images/github.svg" alt=""></li>
-        <li><img src="Images/angellist.svg" alt=""></li> 
+        <li class="twitter"><img src="Images/twitter.svg" alt=""></li>
+        <li class="linkedin"><img src="Images/Linkedin icon.svg" alt=""></li>
+        <li class="medium"><img src="Images/medium.svg" alt=""></li>
+        <li class="github"><img src="Images/github.svg" alt=""></li>
+        <li class="angellist"><img src="Images/angellist.svg" alt=""></li> 
       </ul>
       <button class="arrow item"><i class="fa fa-solid fa-chevron-down"></i></button>
     </section>
@@ -44,7 +47,7 @@
       <hr class="green-line non-desktop"/>
 
       <div class="card">
-      <div class="item img-holder grid-item-1">
+      <div class="recent-works-card img-holder grid-item-1">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -57,7 +60,7 @@
         </div>
       </div>
 
-      <div class="item img-holder grid-item-2">
+      <div class="recent-works-card img-holder grid-item-2">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -70,7 +73,7 @@
         </div>
       </div>
 
-      <div class="item img-holder grid-item-3">
+      <div class="recent-works-card img-holder grid-item-3">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -83,7 +86,7 @@
         </div>
       </div>
 
-      <div class="item img-holder grid-item-4">
+      <div class="recent-works-card img-holder grid-item-4">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -96,7 +99,7 @@
         </div>
       </div>
 
-      <div class="item img-holder grid-item-5">
+      <div class="recent-works-card img-holder grid-item-5">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -109,7 +112,7 @@
         </div>
       </div>
 
-      <div class="item img-holder grid-item-6">
+      <div class="recent-works-card img-holder grid-item-6">
         <div class="text">
           <h4 class="topic">Multi-Post Stories Gain+Glory</h4>
           <ul class="row">
@@ -125,8 +128,11 @@
     </section>
     <section class="about">
       <h2 class="center">About me</h2>
-      <p>
+      <p class="about-p-mobile">
         I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <p class="about-p-desktop"> 
+        I can help you build a product , feature or website Look through some of my work and <br> experience! If you like what you see and have a project you need coded, <br> don’t hestiate to contact me.
       </p>
       <div class="cont">
         <button class="see center-button get">Get My Resume</button>
@@ -176,23 +182,26 @@
     </section>
     <section class="contact">
       <div class="desktop-contact">
+      <div class="contact-h2">
       <h2 class="center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      </div>
      
       <form action="https://formspree.io/f/xdovglob" method="post">  
         <input type="text" id="name" name="user_name" required placeholder="Full name" maxlength="30"/>        
         <input type="email" id="mail" name="user_email" required placeholder="Email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
-        <textarea id="msg" name="user_message" required placeholder="Enter text here" maxlength="500"></textarea>
+        <textarea class="mobile" id="msg" name="user_message" required placeholder="Enter text here" maxlength="500"></textarea>
+        <textarea class="desktop" id="msg" name="user_message" required placeholder="Typing something" maxlength="500"></textarea>
         <button class="see submit" type="submit">Get in touch</button>
       </form>
 
-    </div>
+      </div>
         
       <ul class="socials item ">
-        <li><img src="Images/twitter.svg" alt=""></li>
-        <li><img src="Images/Linkedin icon.svg" alt=""></li>
-        <li><img src="Images/medium.svg" alt=""></li>
-        <li><img src="Images/github.svg" alt=""></li>
-        <li><img src="Images/angellist.svg" alt=""></li> 
+        <li class="twitter"><img src="Images/twitter.svg" alt=""></li>
+        <li class="linkedin"><img src="Images/Linkedin icon.svg" alt=""></li>
+        <li class="medium"><img src="Images/medium.svg" alt=""></li>
+        <li class="github"><img src="Images/github.svg" alt=""></li>
+        <li class="angellist"><img src="Images/angellist.svg" alt=""></li> 
       </ul>
       <p class="non-desktop">harriet.oteng@gmail.com</p>
       <hr class="black-line">

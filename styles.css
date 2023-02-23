@@ -90,10 +90,6 @@ main {
   flex-direction: column;
   align-items: center;
 }
-/* DELETE? */
-.headline .item {
-  text-align: center;
-}
 
 .intro {
   text-align: center;
@@ -106,6 +102,14 @@ main {
   line-height: 28px;
   margin: 58px 24px 0;
   color: #172b4d;
+}
+
+.headline-p-desktop {
+  display: none;
+}
+
+.about-p-desktop {
+  display: none;
 }
 
 .green-intro-text {
@@ -217,6 +221,7 @@ main {
 .tab {
   font-size: 12px;
   margin: 10px;
+  font-weight: 500;
 }
 
 .white .tab {
@@ -224,6 +229,10 @@ main {
 }
 
 .but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
   background-color: #ebf0ee;
   border-radius: 4px;
   margin: 4px;
@@ -285,6 +294,8 @@ main {
 }
 
 .but2 {
+  height: 40px;
+  display: flex;
   background-color: white;
   border-radius: 4px;
   margin: 4px;
@@ -318,6 +329,10 @@ textarea {
   border: 1px solid #60c095;
   height: 116px;
   padding: 12px;
+}
+
+textarea.desktop {
+  display: none;
 }
 
 ::-webkit-resizer {
@@ -375,7 +390,6 @@ textarea::placeholder {
   background-color: #dd5153;
 }
 
-
 @media all and (min-width: 768px) {
   .non-desktop {
     display: none;
@@ -408,18 +422,16 @@ textarea::placeholder {
   }
 
   body {
-    background: url("Images/Header-llustration-desktop.svg") 100% 0 no-repeat;
+    background: url("Images/Header-llustration-desktop.svg") 100% 0 no-repeat, url("Images/illustration-about-me-2-desktop@2x.svg") left 2420px no-repeat, url("Images/illustration about me desktop.svg") right 2230px no-repeat, url("Images/Contact Right Frame.svg") right 3128px no-repeat, url("Images/Contact Left Frame.svg") left 3265px no-repeat, url("Images/middle illustration-2-contact-form-desktop.svg") left 274px top 3430px no-repeat;
   }
 
   nav {
-    border: 2px solid goldenrod;
     position: absolute;
     top: 0;
     left: 0;
   } 
 
   .headline {
-    border: 1px solid green;
     width: 920px;
     height: 756px;
     margin: 24px auto 234px;
@@ -434,14 +446,25 @@ textarea::placeholder {
     font-weight: 800;
     width: 100%;
     height: auto;
-    border: 1px solid green;
+  }
+
+  h1.first::after {
+    content: ".";
   }
 
   .headline p {
-    border: 1px solid red;
     line-height: 32px;
     margin: 0;
     color: #172b4d;
+    width: 100%;
+  }
+
+  .headline-p-desktop {
+    display: inline-block;
+  }
+
+  .headline-p-mobile {
+    display: none;
   }
 
   .socials {
@@ -451,19 +474,36 @@ textarea::placeholder {
     margin: 24px 0 74px;
   }
 
+  .twitter {
+    order: 3;
+  }
+
+  .linkedin {
+    order: 1;
+  }
+
+  .medium {
+    order: 4;
+  }
+
+  .github {
+    order: 0;
+  }
+
+  .angellist {
+    order: 2;
+  }
+
   .recent-works {
-    border: 1px solid red;
     margin-top: 0;
   }
 
   .card {
     display: grid;
-    grid-template: repeat(2, 474px) / repeat(3, 327px);
+    grid-template: repeat(2, 474px) / repeat(3, 369px);
     gap: 32px 24px;
-    /*align-items: center;*/
     justify-content: center;
     margin-bottom: 162px;
-    border: 2px solid rebeccapurple;
   }
 
   .grid-item-1 {
@@ -497,13 +537,11 @@ textarea::placeholder {
   }
 
   .recent-works h2 {
-    /*text-align: center;*/
     margin: 80px auto 52px;
   }
 
   .about {
-    /*background: url("Images/Frame.svg") left 310px no-repeat, url("Images/Mask Group.svg") right -40px no-repeat;*/
-    border: 1px solid red;
+    background: none;
   }
   
   .about h2 {
@@ -511,14 +549,20 @@ textarea::placeholder {
   }
 
   .about p {
-    border: 5px solid orange;
     width: 920px;
     line-height: 32px;
     margin: 24px auto;
   }
 
+  .about-p-desktop {
+    display: block;
+  }
+
+  .about-p-mobile {
+    display: none;
+  }
+
   .about2 {
-    border: 3px solid salmon;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -527,45 +571,72 @@ textarea::placeholder {
   }
 
   .lang {
-    width: 327px;
+    width: 369px;
     height: 352px;
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
 
+  .recent-works-card {
+    width: 369px;
+  }
+
   .desktop-contact {
-    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 80px 0;
+  }
+
+  .contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    flex-wrap: wrap;
   }
 
   .contact h2 {
     width: 463px;
-    margin: 0;
+    margin: auto;
     line-height: 52px;
     font-size: 30px;
+    text-align: left;
+  }
+
+  .contact-h2 {
+    width: 463px;
+    height: 256px;
+    display: flex;
+    align-items: center;
   }
 
   form {
     width: 684px;
-    margin: 80px 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 24px;
   }
 
-  /*textarea::placeholder {
-    color: #091e42;
-  }*/
+  textarea.mobile {
+    display: none;
+  }
+
+  textarea.desktop {
+    display: block;
+  }
+
+  .contact .socials {
+    width: 100%;
+    margin: 0 auto 16px;
+    order: 1;
+  }
 
   .black-line {
-    margin: 0 auto;
+    margin: 145px auto 15px;
     width: 100%;
     border: 0.5px solid #dfe1e6;
-    margin-bottom: 71px;
   }
 }
