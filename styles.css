@@ -15,9 +15,6 @@ body {
 h1 {
   font-size: 2.5rem;
   color: #172b4d;
-}
-
-h1 {
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -270,7 +267,6 @@ main {
   border-radius: 4px;
   font-size: 1.05rem;
   margin-top: 24px;
-
   transition: font-size 3s;
 }
 
