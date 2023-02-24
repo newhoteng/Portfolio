@@ -253,6 +253,8 @@ main {
   border-radius: 4px;
   font-size: 1.05rem;
   margin-top: 24px;
+
+  transition: font-size 3s;
 }
 
 .center {
@@ -384,6 +386,7 @@ textarea::placeholder {
 
 .see:hover {
   background-color: #1e488f;
+  font-size: 1.2rem;
 }
 
 .see:active {
