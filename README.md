@@ -42,10 +42,16 @@
   - About Me
   - Contact Form
 
+- **Desktop Version**
+  - Introduction
+  - Recent Works
+  - About Me
+  - Contact Form
+
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
 ## :rocket: Live Demo
-- Not deployed yet
+- [Portfolio](https://newhoteng.github.io/Portfolio/)
 
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
@@ -61,22 +67,17 @@ In order to run this project you need:
 **Setup**<br>
 
 Clone this repository to your desired folder:<br>
+```
+git clone https://github.com/newhoteng/Portfolio.git
+```
 
 **Install**<br>
 
 Install this project with:<br>
+```
+npm install
+```
 
-**Usage**<br>
-
-To run the project, execute the following command:<br>
-
-**Run tests**<br>
-
-To run tests, run the following command:<br>
-
-**Deployment**<br>
-
-You can deploy this project using:
 
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
@@ -89,7 +90,7 @@ You can deploy this project using:
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
 ## :telescope: Future Features
-- [ ] **Desktop Version**
+- [x] **Desktop Version**
 
 
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
