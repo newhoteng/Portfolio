@@ -148,11 +148,11 @@ main {
 }
 
 .socials li:hover {
-  background-color:#60c095
+  background-color: #60c095;
 }
 
 .socials a:focus {
-  background-color:#60c095
+  background-color: #60c095;
 }
 
 .desktop-menu:hover {
