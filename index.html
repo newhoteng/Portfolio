@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375px, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Harriet Oteng - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
@@ -13,19 +13,18 @@
   <header class="header">
     <a href="#" class="welcome non-desktop">Welcome</a>
     <nav class="nav">
-      <a href="#" class="menu non-desktop"><img src="Images/Icon - Menu.svg" alt=""></a>
+      <a href="#" class="menu non-desktop"><img src="Images/Icon - Menu.svg" alt="navigation menu"></a>
       <ul>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="desktop-menu"><a href="#recent-works">Portfolio</a></li>
+        <li class="desktop-menu"><a href="#about">About</a></li>
+        <li class="desktop-menu"><a href="#contact">Contact</a></li>
       </ul>
     </nav>  
   </header>
   <main>
     <section class="headline">
       <div class="item intro">
-        <h1 class="first">Hey there. I'm Harriet</h1>
-        <h1 class="green-intro-text">I'm a software developer</h1>
+        <h1> <span class="first"> Hey there. I'm Harriet </span> <br> <span class="green-intro-text">I'm a software developer</span></h1>
       </div>
       <p class="headline-p-mobile"> 
         I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -34,15 +33,15 @@
         I can help you build a product , feature or website Look through some of my work and <br> experience! If you like what you see and have a project you need coded, <br> don’t hestiate to contact me.
       </p>
       <ul class="socials item">
-        <li class="twitter"><img src="Images/twitter.svg" alt="twitter handle"></li>
-        <li class="linkedin"><img src="Images/Linkedin icon.svg" alt="Linkedin account"></li>
-        <li class="medium"><img src="Images/medium.svg" alt="medium account"></li>
-        <li class="github"><img src="Images/github.svg" alt="git account"></li>
-        <li class="angellist"><img src="Images/angellist.svg" alt="angelist account"></li> 
+        <li class="twitter"><a href="https://twitter.com/HarrietOteng1" target="_blank"><img src="Images/twitter.svg" alt="twitter handle"></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/harriet-oteng-75554666/" target="_blank"><img src="Images/Linkedin icon.svg" alt="Linkedin account"></a></li>
+        <li class="medium"><a href="" target="_blank"><img src="Images/medium.svg" alt="medium account"></a></li>
+        <li class="github"><a href="https://github.com/newhoteng" target="_blank"><img src="Images/github.svg" alt="git account"></a></li>
+        <li class="angellist"><a href="" target="_blank"><img src="Images/angellist.svg" alt="angelist account"></a></li> 
       </ul>
-      <button class="arrow item"><i class="fa fa-solid fa-chevron-down"></i></button>
+      <button class="arrow item"><i class="fa fa-solid fa-chevron-down" title="more info below"></i></button>
     </section>
-    <section class="recent-works">
+    <section class="recent-works" id="recent-works">
       <h2 class="item">My Recent Works</h2>
       <hr class="green-line non-desktop"/>
 
@@ -56,7 +55,7 @@
             <li class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
           </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
 
@@ -69,7 +68,7 @@
             <li class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
           </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
 
@@ -82,7 +81,7 @@
             <li  class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
           </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
 
@@ -95,7 +94,7 @@
             <li class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
             </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
 
@@ -108,7 +107,7 @@
             <li class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
           </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
 
@@ -121,12 +120,12 @@
             <li class="but"><span class="tab">JavaScript</span></li>
             <li class="but"><span class="tab">html</span></li>
           </ul>
-          <button class="see">See Project</button>
+          <button class="see" onclick="">See Project</button>
         </div>
       </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <h2 class="center">About me</h2>
       <p class="about-p-mobile">
         I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
@@ -141,7 +140,7 @@
     <section class="about2">
       <div class="lang img-holder">
         <div class="circle">
-          <img src="Images/Group.svg" alt="">
+          <img src="Images/Group.svg" alt="globelike image representing coding languages">
         </div>
         <div class="topic">Languages</div>
         <ul class="row white">
@@ -154,7 +153,7 @@
 
       <div class="lang img-holder">
         <div class="circle">
-          <img src="Images/boxes.svg" alt="">
+          <img src="Images/boxes.svg" alt="five cubes representing frameworks">
         </div>
         <div class="topic">Frameworks</div>
         <ul class="row white">
@@ -168,7 +167,7 @@
 
       <div class="lang img-holder">
         <div class="circle">
-          <img src="Images/lightning.svg" alt="">
+          <img src="Images/lightning.svg" alt="lightning bolt to represent skills">
         </div>
         <div class="topic">Skills</div>
         <ul class="row white">
@@ -180,7 +179,7 @@
         </ul>
       </div>  
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="desktop-contact">
       <div class="contact-h2">
       <h2 class="center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
@@ -197,11 +196,11 @@
       </div>
         
       <ul class="socials item ">
-        <li class="twitter"><img src="Images/twitter.svg" alt="twitter handle"></li>
-        <li class="linkedin"><img src="Images/Linkedin icon.svg" alt="Linkedin account"></li>
-        <li class="medium"><img src="Images/medium.svg" alt="medium account"></li>
-        <li class="github"><img src="Images/github.svg" alt="git account"></li>
-        <li class="angellist"><img src="Images/angellist.svg" alt="angelist account"></li> 
+        <li class="twitter"><a href="https://twitter.com/HarrietOteng1" target="_blank"><img src="Images/twitter.svg" alt="twitter handle"></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/harriet-oteng-75554666/" target="_blank"><img src="Images/Linkedin icon.svg" alt="Linkedin account"></a></li>
+        <li class="medium"><a href=""><img src="Images/medium.svg" alt="medium account" target="_blank"></a></li>
+        <li class="github"><a href="https://github.com/newhoteng" target="_blank"><img src="Images/github.svg" alt="git account"></a></li>
+        <li class="angellist"><a href="" target="_blank"><img src="Images/angellist.svg" alt="angelist account"></a></li>  
       </ul>
       <p class="non-desktop">harriet.oteng@gmail.com</p>
       <hr class="black-line">
