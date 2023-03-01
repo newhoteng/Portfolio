@@ -143,6 +143,27 @@ main {
   width: 20px;
 }
 
+.socials li {
+  border-radius: 50%;
+}
+
+.socials li:hover {
+  background-color: #60c095;
+}
+
+.socials a:focus {
+  background-color: #60c095;
+}
+
+.desktop-menu:hover {
+  border: 2px solid salmon;
+  border-radius: 5px;
+}
+
+.desktop-menu a:focus {
+  color: salmon;
+}
+
 .arrow {
   height: 40px;
   width: 40px;
@@ -267,7 +288,7 @@ main {
   border-radius: 4px;
   font-size: 1.05rem;
   margin-top: 24px;
-  transition: font-size 3s;
+  transition: font-size 1s;
 }
 
 .center {
@@ -402,8 +423,14 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
+.see:focus {
+  background-color: #1e488f;
+  font-size: 1.2rem;
+}
+
 .see:active {
   background-color: #dd5153;
+  font-size: 1.2rem;
 }
 
 @media all and (min-width: 768px) {
@@ -464,7 +491,7 @@ textarea::placeholder {
     height: auto;
   }
 
-  h1.first::after {
+  span.first::after {
     content: ".";
   }
 
