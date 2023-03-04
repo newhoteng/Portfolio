@@ -20,7 +20,8 @@
 
 
 #  :open_book: Portfolio
-**Portfolio** is a project to build my personal portfolio site.
+**Portfolio** is a project to replicate a web application interface template from Figma in the form of personal portfolio website using industry best practices.
+[Project Presentation](https://www.loom.com/share/fbad1f2b421e46f3bbea5332d0753187)
 
 ## :hammer_and_wrench: Build With
 ### Tech Stack
