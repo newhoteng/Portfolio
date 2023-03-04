@@ -423,7 +423,7 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
-.see:focus {
+/*.see:focus {
   background-color: #1e488f;
   font-size: 1.2rem;
 }
@@ -431,7 +431,7 @@ textarea::placeholder {
 .see:active {
   background-color: #dd5153;
   font-size: 1.2rem;
-}
+}*/
 
 @media all and (min-width: 768px) {
   .non-desktop {
