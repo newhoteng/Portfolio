@@ -288,7 +288,7 @@ main {
   border-radius: 4px;
   font-size: 1.05rem;
   margin-top: 24px;
-  transition: font-size 1s;
+  /*transition: font-size 1s;*/
 }
 
 .center {
@@ -423,7 +423,7 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
-/*.see:focus {
+.see:focus {
   background-color: #1e488f;
   font-size: 1.2rem;
 }
@@ -431,7 +431,7 @@ textarea::placeholder {
 .see:active {
   background-color: #dd5153;
   font-size: 1.2rem;
-}*/
+}
 
 @media all and (min-width: 768px) {
   .non-desktop {
