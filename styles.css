@@ -94,6 +94,15 @@ nav ul {
   display: none;
 }
 
+.pop-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
 main {
   background: url("Images/header-illsutration-mobile@2x.png") 0 0 no-repeat;
   background-size: contain;
