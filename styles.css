@@ -90,10 +90,6 @@ ul {
   list-style: none;
 }
 
-nav ul {
-  display: none;
-}
-
 .pop-menu {
   position: absolute;
   top: 0;
@@ -101,6 +97,29 @@ nav ul {
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  display: none;
+}
+
+nav ul {
+  border: 2px solid red;
+  height: calc(100vh - 57px);
+  box-shadow: 0px 48px 48px #e5e5e5;
+  border-radius: 0 0 48px 48px;
+  padding-left: 28px;
+  padding-top: 48px;
+}
+
+nav li a {
+  color: #3a4a42;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 44px;
+  border: 1px solid green;
+}
+
+.pop-menu li {
+ border: 1px solid black;
+ margin-bottom: 40px;
 }
 
 main {
@@ -451,7 +470,10 @@ textarea::placeholder {
     font-size: 48px;
     color: #172b4d;
   }
-
+/*changed*/
+  .pop-menu {
+    display: block;
+  }
   nav ul {
     list-style: none;
     display: flex;
@@ -460,6 +482,7 @@ textarea::placeholder {
     align-items: center;
     justify-content: center;
     gap: 32px;
+    box-shadow: none;
   }
 
   nav li a {
