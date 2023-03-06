@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375px, initial-scale=1.0">
-  <script src="portfolio.js"></script>
   <title>Harriet Oteng - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -14,15 +13,26 @@
   <header class="header">
     <a href="#" class="welcome non-desktop">Welcome</a>
     <nav class="nav">
-      <a href="#" class="menu non-desktop"><img src="Images/Icon - Menu.svg" alt="navigation menu"></a>
-      <div class="pop-menu">
-        <ul>
-          <li class="desktop-menu"><a href="#recent-works">Portfolio</a></li>
-          <li class="desktop-menu"><a href="#about">About</a></li>
-          <li class="desktop-menu"><a href="#contact">Contact</a></li>
+      <ul>
+        <li class="desktop-menu"><a href="#recent-works">Portfolio</a></li>
+        <li class="desktop-menu"><a href="#about">About</a></li>
+        <li class="desktop-menu"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <section class="mobile-menu">
+        <ul class="mobile-menu-background">
+          <li><a href="#recent-works">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>  
+      </section>
+    </div>
+
   </header>
   <main>
     <section class="headline">
@@ -208,6 +218,7 @@
       <p class="non-desktop">harriet.oteng@gmail.com</p>
       <hr class="black-line">
     </section>
-  </main>  
+  </main>
+  <script src="portfolio.js"></script>  
 </body>
 </html>
