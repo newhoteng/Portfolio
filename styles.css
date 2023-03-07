@@ -286,11 +286,32 @@ main {
 .img-holder {
   width: 327px;
   height: 474px;
-  /*background-color: #ebf0ee;*/
+  background-color: #ebf0ee;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;/**/
+  align-items: center;/**/
+  justify-content: space-between;/**/
   border-radius: 8px;
   border: 1px solid #d0d9d4;
+}
+
+/*change*/
+.project-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-container {
+  position: relative;
+  width: 100%;
+  height: 252px;
+  overflow: hidden;
+  flex: 1;
+  /*margin-left: 25px;*/
 }
 
 .text {
