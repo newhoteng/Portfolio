@@ -1,24 +1,3 @@
-# 📗 Table of Contents
-- 📖 [About the Project](https://github.com/newhoteng/Portfolio/edit/main/README.md#open_book-portfolio)
-  - 🛠️ [Built With](https://github.com/newhoteng/Portfolio/edit/main/README.md#hammer_and_wrench-build-with)
-    - [Tech Stack](https://github.com/newhoteng/Portfolio/edit/main/README.md#tech-stack)
-    - [Key Features](https://github.com/newhoteng/Portfolio/edit/main/README.md#key-features)
-  - 🚀 [Live Demo](https://github.com/newhoteng/Portfolio/edit/main/README.md#rocket-live-demo)
-- 💻 [Getting Started](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Prerequisites](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Setup](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Install](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Usage](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Run tests](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-  - [Deployment](https://github.com/newhoteng/Portfolio/edit/main/README.md#computer-getting-started)
-- 👥 [Authors](https://github.com/newhoteng/Portfolio/edit/main/README.md#busts_in_silhouette-authors)
-- 🔭 [Future Features](https://github.com/newhoteng/Portfolio/edit/main/README.md#telescope-future-features)
-- 🤝 [Contributing](https://github.com/newhoteng/Portfolio/edit/main/README.md#handshake-contributing)
-- ⭐ [Show your support](https://github.com/newhoteng/Portfolio/edit/main/README.md#star-show-your-support)
-- 🙏 [Acknowledgements](https://github.com/newhoteng/Portfolio/edit/main/README.md#pray-acknowledgements)
-- 📝 [License](https://github.com/newhoteng/Portfolio/edit/main/README.md#memo-license)
-
-
 #  :open_book: Portfolio
 **Portfolio** is a project to replicate a web application interface template from Figma in the form of personal portfolio website using industry best practices.
 [Project Presentation](https://www.loom.com/share/fbad1f2b421e46f3bbea5332d0753187)
@@ -83,7 +62,7 @@ npm install
 <p align="right">(<a href="https://github.com/newhoteng/Portfolio#readme">back to top</a>)</p>
 
 ## :busts_in_silhouette: Authors
-:bust_in_silhouette: **Author 1**
+:bust_in_silhouette: **Harriet Oteng**
 - GitHub: [@githubhandle](https://github.com/newhoteng)
 - Twitter: [@twitterhandle](https://twitter.com/HarrietOteng1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/harriet-oteng-75554666/)
