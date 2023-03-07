@@ -55,10 +55,17 @@ projects.forEach((project, index) => {
   projectCard.classList.add('recent-works-card', 'img-holder', `grid-item-${indexOfProject + 1}`);
   
   cardBox.appendChild(projectCard);
+  
+  let imageContainer = document.createElement('div');
+  imageContainer.classList.add('project-img-container');
+
+  projectCard.appendChild(imageContainer);
 
   let projectImage = document.createElement('img');
-  //projectImage.setAttribute('src', `${project.image}`);
-  projectImage.src = "Cat.webp";
+  //projectImage.src = "Cat.webp";
+  projectImage.src = `${project.image}`
+
+  imageContainer.appendChild(projectImage);
 
   let projectText = document.createElement('div');
   projectText.classList.add('text');
