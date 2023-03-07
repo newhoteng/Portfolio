@@ -1,4 +1,4 @@
-let mobileMenu = document.getElementById('hamburger-icon');
+const mobileMenu = document.getElementById('hamburger-icon');
 
 function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
@@ -6,4 +6,4 @@ function toggleMobileMenu(menu) {
 
 mobileMenu.addEventListener('click', () => {
   toggleMobileMenu(mobileMenu);
-})
+});
