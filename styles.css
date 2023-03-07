@@ -106,8 +106,8 @@ nav {
 }
 
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-3px, 3px);
-  transform: rotate(-45deg) translate(-3px, 3px);
+  -webkit-transform: translateY(5.3px) rotateZ(-45deg);
+  transform: translateY(5.3px) rotateZ(-45deg);
 }
 
 .open .bar2 {
@@ -115,8 +115,8 @@ nav {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-3.5px, 3.5px);
-  transform: rotate(45deg) translate(-3.5px, -3.5px);
+  -webkit-transform: translateY(-4.5px) rotateZ(45deg);
+  transform: translateY(-4.5px) rotateZ(45deg);
 }
 
 .open .mobile-menu {
@@ -500,7 +500,7 @@ textarea::placeholder {
     font-size: 48px;
     color: #172b4d;
   }
-/*changed*/
+
   nav {
     display: block;
   }
