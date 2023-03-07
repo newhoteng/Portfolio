@@ -65,14 +65,6 @@ a {
   border-radius: 24px;
 }
 
-/*.menu {
-  margin-right: 35px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}*/
-
 .header {
   height: 50px;
   width: 100%;
@@ -98,25 +90,24 @@ nav {
 
 #hamburger-icon {
   margin-right: 35px;
-  /*display: none;*/
   cursor: pointer;
-  position: relative;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 #hamburger-icon div {
   width: 18px;
   height: 2px;
   background-color: #28352f;
-  margin: 3px 0;
   border-radius: 2px;
   transition: 0.4s;
+  z-index: 1;
 }
 
-/*when do we give it a class open*/
 .open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+  transform: rotate(-45deg) translate(-3px, 3px);
 }
 
 .open .bar2 {
@@ -124,8 +115,8 @@ nav {
 }
 
 .open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, -8px);
+  -webkit-transform: rotate(45deg) translate(-3.5px, 3.5px);
+  transform: rotate(45deg) translate(-3.5px, -3.5px);
 }
 
 .open .mobile-menu {
@@ -135,7 +126,7 @@ nav {
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -147,7 +138,7 @@ nav {
   box-shadow: 0px 48px 48px #e5e5e5;
   border-radius: 0 0 48px 48px;
   padding-left: 28px;
-  padding-top: 48px;
+  padding-top: 65px;
 }
 
 .mobile-menu li a {
