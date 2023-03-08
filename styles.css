@@ -510,20 +510,25 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
-#mobile-popups .project-popup {
-  border: 3px solid green;
-  width: 100%;
-  height: 836px;
-  background-color: #fff;
-  position: absolute;
+/*#mobile-popups {
+  /*position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
+}*/
+
+.project-popup {
+  border: 3px solid green;
+  width: 100%;
+  background-color: #fff;
   border-radius: 16px;
   padding: 16px;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  display: none;
 }
 
-#mobile-popups .close {
+.close {
   border: 1px solid red;
   position: absolute;
   right: 32px;
@@ -531,6 +536,7 @@ textarea::placeholder {
   width: 24px;
   height: 24px;
   align-items: center;
+  z-index: 1;
 }
 
 .top-left,
@@ -550,6 +556,53 @@ textarea::placeholder {
   transform: translateY(8px) rotateZ(-45deg);
 }
 
+.popup-image-holder {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.popup-image-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-popup h3 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.project-popup p {
+  width: 100%;
+  text-align: left;
+  margin: 12px 0 16px 0;
+}
+
+.but-div {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-popup a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.project-popup .see {
+  margin: 0;
+}
 
 @media all and (min-width: 768px) {
   .non-desktop {
