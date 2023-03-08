@@ -98,7 +98,7 @@ projects.forEach((project, index) => {
 })
 
 
-const mobilePopUps = document.getElementById('mobile-popups');
+/*const mobilePopUps = document.getElementById('mobile-popups');
 
 projects.forEach((project) => {
   let projectPopup = document.createElement('div');
@@ -109,13 +109,10 @@ projects.forEach((project) => {
   let imageContainer = document.createElement('div');
   imageContainer.classList.add('popup-image-holder'); //dont forget to append
 
-  let closeBotton = document.createElement('div');
-  closeBotton.classList.add('close');
-  closeBotton.innerHTML = '+';
   let projectImage = document.createElement('img');
   projectImage.src = `${project.image}`;
 
-  imageContainer.append(closeBotton, projectImage);
+  imageContainer.appendChild(projectImage);
 
   let popupHeading = document.createElement('h1');
   popupHeading.innerHTML = `${project.name}`; //dont forget to append
@@ -140,4 +137,4 @@ projects.forEach((project) => {
   let linksContainer = document.createElement('div');
   
   //give it some class
-})
+})*/
