@@ -208,7 +208,7 @@ seeProjectButtons.forEach(function open(button) {
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(function close(x) {
+closeBtns.forEach(x => {
   x.onclick = function getid() {
     const modal = x.getAttribute('data-modal');
 
