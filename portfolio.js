@@ -98,7 +98,7 @@ projects.forEach((project) => {
   projectTitle.innerHTML = `${project.name}`;
   popUpButton.innerHTML = 'See Project';
 
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i+=1) {
+  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i += 1) {
     const techItem = document.createElement('li');
     techItem.classList.add('but');
     techList.append(techItem);
@@ -142,7 +142,7 @@ projects.forEach((project) => {
   mUl.classList.add('row');
   
   // Add uls
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i+=1) {
+  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i +=1 ) {
     const mli = document.createElement('li');
     mli.classList.add('but');
     mUl.append(mli);
@@ -170,7 +170,7 @@ projects.forEach((project) => {
   const liveLink = document.createElement('a');
   const sourceLink = document.createElement('a');
   liveLink.setAttribute('href', `${project.live}`);
-  sourceLink.setAttribute('href', `${project.source}`)
+  sourceLink.setAttribute('href', `${project.source}`);
   
   const livetext = document.createElement('span');
   const sourcetext = document.createElement('span');
@@ -193,22 +193,21 @@ projects.forEach((project) => {
 
 const seeProjectButtons = document.querySelectorAll('.display');
 
-seeProjectButtons.forEach(button => button.addEventListener ('click', function() {
+seeProjectButtons.forEach(button => button.addEventListener('click', function() {
   const modal = button.getAttribute('data-modal');
   document.getElementById(modal).style.display = 'block';
-}))
+}));
 
 const closeBtns = document.querySelectorAll('.close');
 
-// closeBtns.forEach(x => x.addEventListener ('click', function() {
-//   const modal = x.getAttribute('data-modal');
-//   document.getElementById(modal).style.display = 'none';
-// }));
-
-function close() {
+closeBtns.forEach(x => x.addEventListener('click', function() {
   const modal = x.getAttribute('data-modal');
   document.getElementById(modal).style.display = 'none';
-};
+}));
 
-closeBtns.forEach(x => x.addEventListener ('click', close()));
+// function close(x) {
+//   const modal = x.getAttribute('data-modal');
+//   document.getElementById(modal).style.display = 'none';
+// };
 
+// closeBtns.forEach(x => x.addEventListener ('click', close()));
