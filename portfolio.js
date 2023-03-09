@@ -143,7 +143,7 @@ projects.forEach((project) => {
   let popupHeading = document.createElement('h3');
   popupHeading.innerHTML = `${project.name}`;
 
-  mUl = document.createElement('ul');
+  let mUl = document.createElement('ul');
   mUl.classList.add('row');
   
   //Add uls
