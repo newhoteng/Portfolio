@@ -94,7 +94,7 @@ projects.forEach((project) => {
   popUpButton.classList.add('see', 'display'); 
 
   projectText.append(projectTitle, techList, popUpButton);
-  
+
   projectTitle.innerHTML = `${project.name}`;
   popUpButton.innerHTML = 'See Project';
 
@@ -193,17 +193,33 @@ projects.forEach((project) => {
 
 const seeProjectButtons = document.querySelectorAll('.display');
 
-seeProjectButtons.forEach(button => button.addEventListener('click', function() {
-  const modal = button.getAttribute('data-modal');
-  document.getElementById(modal).style.display = 'block';
-}));
+// seeProjectButtons.forEach(button => button.addEventListener('click', function() {
+//   const modal = button.getAttribute('data-modal');
+//   document.getElementById(modal).style.display = 'block';
+// }));
+
+seeProjectButtons.forEach(function(button) {
+  button.onclick = function() {
+    const modal = button.getAttribute('data-modal');
+
+    document.getElementById(modal).style.display = 'block';
+  };
+});
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(x => x.addEventListener('click', function() {
-  const modal = x.getAttribute('data-modal');
-  document.getElementById(modal).style.display = 'none';
-}));
+closeBtns.forEach(function(x) {
+  x.onclick = function() {
+    const modal = x.getAttribute('data-modal');
+
+    document.getElementById(modal).style.display = 'none';
+  }
+})
+
+// closeBtns.forEach(x => x.addEventListener('click', function() {
+//   const modal = x.getAttribute('data-modal');
+//   document.getElementById(modal).style.display = 'none';
+// }));
 
 // function close(x) {
 //   const modal = x.getAttribute('data-modal');
