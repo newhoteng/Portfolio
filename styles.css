@@ -141,6 +141,14 @@ nav {
   padding-top: 65px;
 }
 
+.project-popup a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 .mobile-menu li a {
   color: #3a4a42;
   font-size: 2rem;
@@ -203,6 +211,10 @@ main {
 
 .socials li {
   border-radius: 50%;
+}
+
+.project-popup li {
+  margin: 0;
 }
 
 .socials li:hover {
@@ -288,9 +300,28 @@ main {
   height: 474px;
   background-color: #ebf0ee;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 8px;
   border: 1px solid #d0d9d4;
+}
+
+.project-img-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img-container {
+  position: relative;
+  width: 100%;
+  height: 252px;
+  overflow: hidden;
+  flex: 1;
 }
 
 .text {
@@ -489,6 +520,97 @@ textarea::placeholder {
 .see:active {
   background-color: #dd5153;
   font-size: 1.2rem;
+}
+
+/* popup */
+.shadow {
+  background-color: #c1c7d0;
+  padding: 20px 16px 26px;
+  position: fixed;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  display: none;
+}
+
+.project-popup {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  z-index: 1;
+}
+
+.top-left,
+.top-right {
+  height: 2px;
+  background-color: #67798e;
+  border-radius: 1px;
+  width: 17px;
+  margin: 0 auto;
+}
+
+.top-left {
+  transform: translateY(9.5px) rotateZ(45deg);
+}
+
+.top-right {
+  transform: translateY(8px) rotateZ(-45deg);
+}
+
+.popup-image-holder {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.popup-image-holder img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-popup h3 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.project-popup p {
+  width: 100%;
+  text-align: left;
+  margin: 12px 0 16px 0;
+}
+
+.but-div {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.project-popup .see {
+  margin: 0;
+}
+
+.project-popup ul {
+  justify-content: start;
+  gap: 8px;
 }
 
 @media all and (min-width: 768px) {
@@ -745,5 +867,126 @@ textarea::placeholder {
     margin: 145px auto 15px;
     width: 100%;
     border: 0.5px solid #dfe1e6;
+  }
+
+  /* pop up begins */
+  .shadow {
+    background-color: #c1c7d0;
+    width: 100%;
+    height: 100vh;
+    padding: 122px 0;
+    position: fixed;
+    top: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .project-popup {
+    background-color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 24px 24px  44px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .close {
+    background-color: #ebecf0;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    z-index: 1;
+    margin-bottom: 14px;
+    position: static;
+    margin-left: auto;
+  }
+
+  .top-left {
+    transform: translateY(16.5px) rotateZ(45deg);
+  }
+
+  .top-right {
+    transform: translateY(15px) rotateZ(-45deg);
+  }
+
+  .popup-image-holder {
+    width: 100%;
+    height: 616px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+    flex: 0 0 100%;
+  }
+
+  .popup-image-holder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .project-popup h3 {
+    width: 548px;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin-bottom: 20px;
+    flex: 1 0 50%;
+  }
+
+  .project-popup p {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    order: 2;
+    flex: 0 0 100%;
+  }
+
+  .but-div {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex: 0 0 25%;
+    margin-bottom: 20px;
+    justify-self: end;
+    margin-left: auto;
+  }
+
+  .project-popup a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    white-space: nowrap;
+  }
+
+  .project-popup .see {
+    margin: 0;
+  }
+
+  .project-popup ul {
+    justify-content: start;
+    gap: 8px;
+    margin-bottom: 36px;
+    order: 1;
+    flex: 0 0 100%;
+  }
+
+  .project-popup li {
+    margin: 0;
+  }
+
+  .project-popup .but {
+    background-color: #ebecf0;
   }
 }
