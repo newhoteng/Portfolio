@@ -198,7 +198,7 @@ const seeProjectButtons = document.querySelectorAll('.display');
 //   document.getElementById(modal).style.display = 'block';
 // }));
 
-seeProjectButtons.forEach(function open(button) {
+seeProjectButtons.forEach((button) => {
   button.onclick = function getid() {
     const modal = button.getAttribute('data-modal');
 
@@ -208,7 +208,7 @@ seeProjectButtons.forEach(function open(button) {
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(x => {
+closeBtns.forEach((x) => {
   x.onclick = function getid() {
     const modal = x.getAttribute('data-modal');
 
