@@ -64,7 +64,6 @@ const mobilePopUps = document.getElementById('mobile-popups');
 
 projects.forEach((project) => {
   const indexOfProject = projects.indexOf(project);
-  
   // create project card
   const projectCard = document.createElement('div');
   projectCard.classList.add('recent-works-card', 'img-holder', `grid-item-${indexOfProject + 1}`);
@@ -76,9 +75,8 @@ projects.forEach((project) => {
 
   projectCard.appendChild(imageContainer);
 
-  const projectImage = document.createElement('img'); 
+  const projectImage = document.createElement('img');
   projectImage.src = `${project.image}`;
-
   imageContainer.appendChild(projectImage);
 
   const projectText = document.createElement('div');
@@ -96,11 +94,11 @@ projects.forEach((project) => {
   popUpButton.classList.add('see', 'display'); 
 
   projectText.append(projectTitle, techList, popUpButton);
-
+  
   projectTitle.innerHTML = `${project.name}`;
   popUpButton.innerHTML = 'See Project';
 
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i++) {
+  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i+=1) {
     const techItem = document.createElement('li');
     techItem.classList.add('but');
     techList.append(techItem);
@@ -109,7 +107,7 @@ projects.forEach((project) => {
     techText.classList.add('tab');
     techItem.append(techText);
     techText.innerHTML = `${project.tech[i]}`;
-  };
+  }
 
   // create popups
   const backgroundShadow = document.createElement('div');
@@ -143,8 +141,8 @@ projects.forEach((project) => {
   const mUl = document.createElement('ul');
   mUl.classList.add('row');
   
-  //Add uls
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i++) {
+  // Add uls
+  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i+=1) {
     const mli = document.createElement('li');
     mli.classList.add('but');
     mUl.append(mli);
@@ -153,7 +151,7 @@ projects.forEach((project) => {
     mtechText.classList.add('tab');
     mli.append(mtechText);
     mtechText.innerHTML = `${project.tech[i]}`;
-  };
+  }
 
   const projectDesc = document.createElement('p');
   projectDesc.innerHTML = `${project.desc}`;
@@ -172,7 +170,7 @@ projects.forEach((project) => {
   const liveLink = document.createElement('a');
   const sourceLink = document.createElement('a');
   liveLink.setAttribute('href', `${project.live}`);
-  sourceLink.setAttribute('href', `${project.source}`);
+  sourceLink.setAttribute('href', `${project.source}`)
   
   const livetext = document.createElement('span');
   const sourcetext = document.createElement('span');
@@ -189,9 +187,9 @@ projects.forEach((project) => {
 
   seeLive.append(liveLink);
   seeSource.append(sourceLink);
-  
+
   projectPopup.append(closeButton, mobilePopImg, popupHeading, mUl, projectDesc, buttonsContainer);
-})
+});
 
 const seeProjectButtons = document.querySelectorAll('.display');
 
@@ -202,7 +200,15 @@ seeProjectButtons.forEach(button => button.addEventListener ('click', function()
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(x => x.addEventListener ('click', function() {
+// closeBtns.forEach(x => x.addEventListener ('click', function() {
+//   const modal = x.getAttribute('data-modal');
+//   document.getElementById(modal).style.display = 'none';
+// }));
+
+function close() {
   const modal = x.getAttribute('data-modal');
   document.getElementById(modal).style.display = 'none';
-}));
+};
+
+closeBtns.forEach(x => x.addEventListener ('click', close()));
+
