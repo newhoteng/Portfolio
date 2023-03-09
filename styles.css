@@ -141,6 +141,14 @@ nav {
   padding-top: 65px;
 }
 
+.project-popup a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
 .mobile-menu li a {
   color: #3a4a42;
   font-size: 2rem;
@@ -211,14 +219,6 @@ main {
 
 .socials li:hover {
   background-color: #60c095;
-}
-
-.project-popup a {
-  color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
 }
 
 .socials a:focus {

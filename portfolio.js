@@ -63,7 +63,7 @@ const cardBox = document.getElementById('card');
 const mobilePopUps = document.getElementById('mobile-popups');
 
 projects.forEach((project) => {
-  let indexOfProject = projects.indexOf(project);
+  const indexOfProject = projects.indexOf(project);
   
   // create project card
   const projectCard = document.createElement('div');
@@ -101,11 +101,11 @@ projects.forEach((project) => {
   popUpButton.innerHTML = 'See Project';
 
   for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i++) {
-    let techItem = document.createElement('li');
+    const techItem = document.createElement('li');
     techItem.classList.add('but');
     techList.append(techItem);
 
-    let techText = document.createElement('span');
+    const techText = document.createElement('span');
     techText.classList.add('tab');
     techItem.append(techText);
     techText.innerHTML = `${project.tech[i]}`;
@@ -121,47 +121,47 @@ projects.forEach((project) => {
 
   backgroundShadow.appendChild(projectPopup);
 
-  let closeButton = document.createElement('div');
+  const closeButton = document.createElement('div');
   closeButton.setAttribute('data-modal', `project-${indexOfProject + 1}`);
   closeButton.classList.add('close');
-  let leftline = document.createElement('div');
+  const leftline = document.createElement('div');
   leftline.classList.add('top-left');
-  let rightline = document.createElement('div');
+  const rightline = document.createElement('div');
   rightline.classList.add('top-right');
 
   closeButton.append(leftline, rightline);
 
-  let mobilePopImg = document.createElement('div');
+  const mobilePopImg = document.createElement('div');
   mobilePopImg.classList.add('popup-image-holder');
-  let mImage = document.createElement('img');
+  const mImage = document.createElement('img');
   mImage.src = `${project.image}`;
   mobilePopImg.appendChild(mImage);
 
-  let popupHeading = document.createElement('h3');
+  const popupHeading = document.createElement('h3');
   popupHeading.innerHTML = `${project.name}`;
 
-  let mUl = document.createElement('ul');
+  const mUl = document.createElement('ul');
   mUl.classList.add('row');
   
   //Add uls
   for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i++) {
-    let mli = document.createElement('li');
+    const mli = document.createElement('li');
     mli.classList.add('but');
     mUl.append(mli);
 
-    let mtechText = document.createElement('span');
+    const mtechText = document.createElement('span');
     mtechText.classList.add('tab');
     mli.append(mtechText);
     mtechText.innerHTML = `${project.tech[i]}`;
   };
 
-  let projectDesc = document.createElement('p');
+  const projectDesc = document.createElement('p');
   projectDesc.innerHTML = `${project.desc}`;
 
-  let buttonsContainer = document.createElement('div');
+  const buttonsContainer = document.createElement('div');
   buttonsContainer.classList.add('but-div');
-  let seeLive = document.createElement('button');
-  let seeSource = document.createElement('button');
+  const seeLive = document.createElement('button');
+  const seeSource = document.createElement('button');
   seeLive.classList.add('see');
   seeSource.classList.add('see');
   seeLive.setAttribute('type', 'button');
@@ -169,19 +169,19 @@ projects.forEach((project) => {
 
   buttonsContainer.append(seeLive, seeSource);
 
-  let liveLink = document.createElement('a');
-  let sourceLink = document.createElement('a');
+  const liveLink = document.createElement('a');
+  const sourceLink = document.createElement('a');
   liveLink.setAttribute('href', `${project.live}`);
   sourceLink.setAttribute('href', `${project.source}`);
   
-  let livetext = document.createElement('span');
-  let sourcetext = document.createElement('span');
+  const livetext = document.createElement('span');
+  const sourcetext = document.createElement('span');
   livetext.innerHTML = 'See Live';
   sourcetext.innerHTML = 'See Source';
 
-  let liveIcon = document.createElement('img');
+  const liveIcon = document.createElement('img');
   liveIcon.src = 'Images/Live icon.svg';
-  let sourceIcon = document.createElement('img');
+  const sourceIcon = document.createElement('img');
   sourceIcon.src = 'Images/Icon -GitHub.svg';
 
   liveLink.append(livetext, liveIcon);
@@ -195,14 +195,14 @@ projects.forEach((project) => {
 
 const seeProjectButtons = document.querySelectorAll('.display');
 
-seeProjectButtons.forEach(button => button.addEventListener ('click', function open () {
-  let modal = button.getAttribute('data-modal');
+seeProjectButtons.forEach(button => button.addEventListener ('click', function() {
+  const modal = button.getAttribute('data-modal');
   document.getElementById(modal).style.display = 'block';
 }))
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(x => x.addEventListener ('click', function close () {
+closeBtns.forEach(x => x.addEventListener ('click', function() {
   const modal = x.getAttribute('data-modal');
   document.getElementById(modal).style.display = 'none';
 }));
