@@ -510,26 +510,26 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
-/*#mobile-popups {
-  /*position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}*/
-
-.project-popup {
-  border: 3px solid green;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 16px;
-  padding: 16px;
+.shadow {
+  border: 1px solid red;
+  background-color: #c1c7d0;
+  padding: 20px 16px 26px;
   position: fixed;
   top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
   display: none;
 }
 
+.project-popup {
+  border: 3px solid green;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+}
+
 .close {
-  border: 1px solid red;
   position: absolute;
   right: 32px;
   top: 32px;
@@ -542,7 +542,7 @@ textarea::placeholder {
 .top-left,
 .top-right {
   height: 2px;
-  background-color: red;
+  background-color:#67798e;
   border-radius: 1px;
   width: 17px;
   margin: 0 auto;
@@ -590,7 +590,8 @@ textarea::placeholder {
 .but-div {
   border: 1px solid red;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
 }
 
 .project-popup a {
@@ -601,6 +602,16 @@ textarea::placeholder {
   gap: 16px;
 }
 .project-popup .see {
+  margin: 0;
+}
+
+.project-popup ul {
+  border: 1px solid blue;
+  justify-content: start;
+  gap: 8px;
+}
+
+.project-popup li {
   margin: 0;
 }
 

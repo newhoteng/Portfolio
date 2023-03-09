@@ -120,10 +120,15 @@ projects.forEach((project) => {
   };
 
   //create popups
+  let backgroundShadow = document.createElement('div');
+  backgroundShadow.setAttribute('id', `project-${indexOfProject + 1}`);
+  backgroundShadow.classList.add('shadow');
   let projectPopup = document.createElement('div');
-  projectPopup.setAttribute('id', `project-${indexOfProject + 1}`)
+  //projectPopup.setAttribute('id', `project-${indexOfProject + 1}`)// delete?
   projectPopup.classList.add('project-popup');
-  mobilePopUps.appendChild(projectPopup);
+  mobilePopUps.appendChild(backgroundShadow);
+
+  backgroundShadow.appendChild(projectPopup);
 
   let closeButton = document.createElement('div');
   closeButton.setAttribute('data-modal', `project-${indexOfProject + 1}`);
@@ -198,7 +203,7 @@ projects.forEach((project) => {
 
 
 const seeProjectButtons = document.querySelectorAll('.display');
-let mobilePopUp = document.querySelector('.project-popup');
+//let mobilePopUp = document.querySelector('.project-popup');
 
 
 seeProjectButtons.forEach(button => button.addEventListener('click', function() {
@@ -215,44 +220,6 @@ closeBtns.forEach(x => x.addEventListener('click', function() {
 
 
 
-document.querySelector('.close').addEventListener('click', function() {
-  document.querySelector('#mobile-popups').style.display = 'none';
-})
-
-
-
-
-/*projects.forEach((project) => {
-
-  let imageContainer = document.createElement('div');
-  imageContainer.classList.add('popup-image-holder'); //dont forget to append
-
-  let projectImage = document.createElement('img');
-  projectImage.src = `${project.image}`;
-
-  imageContainer.appendChild(projectImage);
-
-  let popupHeading = document.createElement('h1');
-  popupHeading.innerHTML = `${project.name}`; //dont forget to append
-
-  let techList = document.createElement('ul'); //dont forget to append
-  techList.classList.add('row') //check class later
-
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i++) {
-    let techItem = document.createElement('li');
-    techItem.classList.add('but'); //check class
-    techList.append(techItem);
-
-    let techText = document.createElement('span');
-    techText.classList.add('tab'); //check class
-    techItem.append(techText);
-    techText.innerHTML = `${project.tech[i]}`;
-  };
-
-  let projectDescription = document.createElement('p'); //dont forget to append
-  projectDescription.innerHTML = `${project.desc}`;
-
-  let linksContainer = document.createElement('div');
-  
-  //give it some class
-})*/
+// document.querySelector('.close').addEventListener('click', function() {
+//   document.querySelector('#mobile-popups').style.display = 'none';
+// })
