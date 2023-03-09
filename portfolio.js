@@ -67,9 +67,9 @@ projects.forEach((project) => {
   // create project card
   const projectCard = document.createElement('div');
   projectCard.classList.add('recent-works-card', 'img-holder', `grid-item-${indexOfProject + 1}`);
-  
+
   cardBox.appendChild(projectCard);
-  
+
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('project-img-container');
 
@@ -91,7 +91,7 @@ projects.forEach((project) => {
   const popUpButton = document.createElement('button');
   popUpButton.setAttribute('data-modal', `project-${indexOfProject + 1}`);
   popUpButton.setAttribute('type', 'button');
-  popUpButton.classList.add('see', 'display'); 
+  popUpButton.classList.add('see', 'display');
 
   projectText.append(projectTitle, techList, popUpButton);
 
@@ -140,9 +140,9 @@ projects.forEach((project) => {
 
   const mUl = document.createElement('ul');
   mUl.classList.add('row');
-  
+
   // Add uls
-  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i +=1 ) {
+  for (let i = 0, lengthOfTech = project.tech.length; i < lengthOfTech; i += 1) {
     const mli = document.createElement('li');
     mli.classList.add('but');
     mUl.append(mli);
@@ -171,7 +171,7 @@ projects.forEach((project) => {
   const sourceLink = document.createElement('a');
   liveLink.setAttribute('href', `${project.live}`);
   sourceLink.setAttribute('href', `${project.source}`);
-  
+
   const livetext = document.createElement('span');
   const sourcetext = document.createElement('span');
   livetext.innerHTML = 'See Live';
@@ -198,7 +198,7 @@ const seeProjectButtons = document.querySelectorAll('.display');
 //   document.getElementById(modal).style.display = 'block';
 // }));
 
-seeProjectButtons.forEach(function(button) {
+seeProjectButtons.forEach(function open(button) {
   button.onclick = function() {
     const modal = button.getAttribute('data-modal');
 
@@ -208,13 +208,13 @@ seeProjectButtons.forEach(function(button) {
 
 const closeBtns = document.querySelectorAll('.close');
 
-closeBtns.forEach(function(x) {
+closeBtns.forEach(function close(x) {
   x.onclick = function() {
     const modal = x.getAttribute('data-modal');
 
     document.getElementById(modal).style.display = 'none';
-  }
-})
+  };
+});
 
 // closeBtns.forEach(x => x.addEventListener('click', function() {
 //   const modal = x.getAttribute('data-modal');
