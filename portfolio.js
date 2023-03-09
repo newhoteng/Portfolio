@@ -57,43 +57,40 @@ const projects = [
     live: 'https://newhoteng.github.io/Portfolio/',
     source: 'https://github.com/newhoteng/Portfolio',
   },
-]
+];
 
 const cardBox = document.getElementById('card');
 const mobilePopUps = document.getElementById('mobile-popups');
-
-let projectImage, projectTitle, techList;
 
 projects.forEach((project) => {
   let indexOfProject = projects.indexOf(project);
   
   // create project card
-  let projectCard = document.createElement('div');
+  const projectCard = document.createElement('div');
   projectCard.classList.add('recent-works-card', 'img-holder', `grid-item-${indexOfProject + 1}`);
   
   cardBox.appendChild(projectCard);
   
-  let imageContainer = document.createElement('div');
+  const imageContainer = document.createElement('div');
   imageContainer.classList.add('project-img-container');
 
   projectCard.appendChild(imageContainer);
-  
 
-  projectImage = document.createElement('img'); 
+  const projectImage = document.createElement('img'); 
   projectImage.src = `${project.image}`;
 
   imageContainer.appendChild(projectImage);
 
-  let projectText = document.createElement('div');
+  const projectText = document.createElement('div');
   projectText.classList.add('text');
 
   projectCard.appendChild(projectText);
 
-  projectTitle = document.createElement('h3');
+  const projectTitle = document.createElement('h3');
   projectTitle.classList.add('topic');
-  techList = document.createElement('ul');
+  const techList = document.createElement('ul');
   techList.classList.add('row');
-  let popUpButton = document.createElement('button');
+  const popUpButton = document.createElement('button');
   popUpButton.setAttribute('data-modal', `project-${indexOfProject + 1}`);
   popUpButton.setAttribute('type', 'button');
   popUpButton.classList.add('see', 'display'); 
@@ -115,10 +112,10 @@ projects.forEach((project) => {
   };
 
   // create popups
-  let backgroundShadow = document.createElement('div');
+  const backgroundShadow = document.createElement('div');
   backgroundShadow.setAttribute('id', `project-${indexOfProject + 1}`);
   backgroundShadow.classList.add('shadow');
-  let projectPopup = document.createElement('div');
+  const projectPopup = document.createElement('div');
   projectPopup.classList.add('project-popup');
   mobilePopUps.appendChild(backgroundShadow);
 
