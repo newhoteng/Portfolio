@@ -510,6 +510,7 @@ textarea::placeholder {
   font-size: 1.2rem;
 }
 
+/*begin*/
 .shadow {
   border: 1px solid red;
   background-color: #c1c7d0;
