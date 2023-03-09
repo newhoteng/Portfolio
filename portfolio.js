@@ -199,7 +199,7 @@ const seeProjectButtons = document.querySelectorAll('.display');
 // }));
 
 seeProjectButtons.forEach(function open(button) {
-  button.onclick = function() {
+  button.onclick = function getid() {
     const modal = button.getAttribute('data-modal');
 
     document.getElementById(modal).style.display = 'block';
@@ -209,7 +209,7 @@ seeProjectButtons.forEach(function open(button) {
 const closeBtns = document.querySelectorAll('.close');
 
 closeBtns.forEach(function close(x) {
-  x.onclick = function() {
+  x.onclick = function getid() {
     const modal = x.getAttribute('data-modal');
 
     document.getElementById(modal).style.display = 'none';
