@@ -492,8 +492,9 @@ textarea {
   padding: 12px;
 }
 
+/* Previosly display none */
 textarea.desktop {
-  display: none;
+  display: block;
 }
 
 ::-webkit-resizer {
