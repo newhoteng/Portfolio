@@ -478,21 +478,9 @@ input:focus.invalid {
 }
 
 /* end */
-input.success {
-  border: 2px solid green;
-}
-
-input.error {
-  border: 2px solid red;
-}
-
-textarea {
-  border: 1px solid #60c095;
-  height: 116px;
-  padding: 12px;
-}
 
 /* Previosly display none */
+
 textarea.desktop {
   display: block;
 }
