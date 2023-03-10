@@ -214,3 +214,20 @@ closeBtns.forEach((x) => {
     document.getElementById(modal).style.display = 'none';
   };
 });
+
+// form validation
+
+// This uses the input event on both inputs, and when one is not empty it sets the required property of the other input to false.
+document.addEventListener('DOMContentLoaded', function() {
+  const inputs = Array.from(
+    document.querySelectorAll('input[name=user_message], input[name=user_message_desktop]')
+  );
+
+  const inputListener = e => {
+    inputs
+      .filter(i => i !== e.target)
+      .forEach(i => (i.required = !e.target.value.length));
+  };
+
+  inputs.forEach(i => i.addEventListener('input', inputListener));
+});
