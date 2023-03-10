@@ -450,6 +450,10 @@ textarea {
   border-radius: 4px;
 }
 
+textarea {
+  height: 114px;
+}
+
 /* email validation */
 
 input.invalid {
@@ -462,10 +466,10 @@ input:focus.invalid {
 }
 
 /* This is the style of our error messages */
+
 .error {
   width: 100%;
   padding: 0;
-
   font-size: 80%;
   color: white;
   background-color: #900;
