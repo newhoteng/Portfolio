@@ -215,6 +215,26 @@ closeBtns.forEach((x) => {
   };
 });
 
+// Local storage
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const formInputs = {
+    userName: document.getElementById('name').value,
+    email: document.getElementById('mail').value,
+    text: document.getElementById('msg').value,
+  }
+
+  localStorage.setItem('formInputValues', JSON.stringify(formInputs));
+});
+
+// window.onload = function() {
+//     localStorage.setItem("name", $('#inputName').val());
+//     localStorage.setItem("email", $('#inputEmail').val());   
+// }
+
+
 // Form validation
 const form = document.querySelector('form');
 const email = document.getElementById('mail');
@@ -259,15 +279,4 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// Local storage
-window.onload = function() {
-    localStorage.setItem("name", $('#inputName').val());
-    localStorage.setItem("email", $('#inputEmail').val());   
-}
-function populateStorage() {
-  localStorage.setItem('bgcolor', document.getElementById('bgcolor').value);
-  localStorage.setItem('font', document.getElementById('font').value);
-  localStorage.setItem('image', document.getElementById('image').value);
 
-  setStyles();
-}
