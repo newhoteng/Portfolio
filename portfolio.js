@@ -215,7 +215,7 @@ closeBtns.forEach((x) => {
   };
 });
 
-// form validation
+// Form validation
 const form = document.querySelector('form');
 const email = document.getElementById('mail');
 const error = document.getElementById('message');
@@ -258,3 +258,5 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// Local storage
