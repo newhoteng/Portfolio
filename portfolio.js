@@ -223,17 +223,17 @@ const error = document.getElementById('message');
 
 // Store the form data in local storage
 
-form.addEventListener("submit", (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData.entries());
-  localStorage.setItem("formData", JSON.stringify(data));
+  localStorage.setItem('formData', JSON.stringify(data));
 });
 
 // Load the stored data from local storage
 
 window.onload = () => {
-  const storedData = JSON.parse(localStorage.getItem("formData"));
+  const storedData = JSON.parse(localStorage.getItem('formData'));
   if (storedData) {
     Object.entries(storedData).forEach(([key, value]) => {
       form.elements[key].value = value;
@@ -281,5 +281,3 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
-
-
