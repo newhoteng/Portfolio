@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harriet Oteng - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
 </head>
 
@@ -137,18 +136,15 @@
           <h2 class="center">I'm always interested in hearing about new projects, so if you'd like to chat please get in
             touch.</h2>
         </div>
-
         <form action="https://formspree.io/f/xdovglob" method="post">
-          <input type="text" id="name" name="user_name" required placeholder="Full name" maxlength="30" />
-          <input type="email" id="mail" name="user_email" required placeholder="Email address"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-          <textarea class="mobile" id="msg" name="user_message" required placeholder="Enter text here"
+          <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" />
+          <input type="text" id="mail" name="user_email" required placeholder="Email address" />
+          <!-- <textarea class="mobile" id="msg" name="user_message" required placeholder="Enter text here" maxlength="500"></textarea> -->
+          <textarea class="desktop" id="msg" name="user_message" placeholder="Typing something"
             maxlength="500"></textarea>
-          <textarea class="desktop" id="msg" name="user_message" required placeholder="Typing something"
-            maxlength="500"></textarea>
-          <button class="see submit" type="submit">Get in touch</button>
+          <button class="see submit" type="submit" >Get in touch</button>
+          <span id="message" class="error" aria-live="polite"></span>
         </form>
-
       </div>
 
       <ul class="socials item ">

@@ -171,6 +171,10 @@ projects.forEach((project) => {
   const sourceLink = document.createElement('a');
   liveLink.setAttribute('href', `${project.live}`);
   sourceLink.setAttribute('href', `${project.source}`);
+  liveLink.setAttribute('target', '_blank');
+  sourceLink.setAttribute('target', '_blank');
+  liveLink.setAttribute('rel', 'noopener noreferrer');
+  sourceLink.setAttribute('rel', 'noopener noreferrer');
 
   const livetext = document.createElement('span');
   const sourcetext = document.createElement('span');
@@ -209,4 +213,48 @@ closeBtns.forEach((x) => {
 
     document.getElementById(modal).style.display = 'none';
   };
+});
+
+// form validation
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const error = document.getElementById('message');
+
+// As per the HTML Specification
+const emailRegExp = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+window.addEventListener('load', () => {
+  // Here, we test if the field is empty (remember, the field is not required)
+  // If it is not, we check if its content is a well-formed email address.
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  email.className = isValid ? 'valid' : 'invalid';
+});
+
+// This defines what happens when the user types in the field
+email.addEventListener('input', () => {
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (isValid) {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+  } else {
+    email.className = 'invalid';
+  }
+});
+
+// This defines what happens when the user tries to submit the data
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const isValid = email.value.length === 0 || emailRegExp.test(email.value);
+  if (!isValid) {
+    email.className = 'invalid';
+    error.textContent = 'Enter a valid email address. Use lowercase';
+    error.className = 'error active';
+  } else {
+    email.className = 'valid';
+    error.textContent = '';
+    error.className = 'error';
+    form.submit();
+  }
 });
