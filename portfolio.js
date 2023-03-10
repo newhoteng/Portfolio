@@ -264,3 +264,10 @@ window.onload = function() {
     localStorage.setItem("name", $('#inputName').val());
     localStorage.setItem("email", $('#inputEmail').val());   
 }
+function populateStorage() {
+  localStorage.setItem('bgcolor', document.getElementById('bgcolor').value);
+  localStorage.setItem('font', document.getElementById('font').value);
+  localStorage.setItem('image', document.getElementById('image').value);
+
+  setStyles();
+}
