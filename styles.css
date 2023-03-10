@@ -450,14 +450,6 @@ textarea {
   border-radius: 4px;
 }
 
-input.success {
-  border: 2px solid green;
-}
-
-input.error {
-  border: 2px solid red;
-}
-
 textarea {
   border: 1px solid #60c095;
   height: 116px;
