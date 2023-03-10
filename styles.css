@@ -451,7 +451,9 @@ textarea {
 }
 
 textarea {
-  height: 114px;
+  border: 1px solid #60c095;
+  height: 116px;
+  padding: 12px;
 }
 
 /* email validation */
