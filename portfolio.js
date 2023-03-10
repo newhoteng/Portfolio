@@ -260,3 +260,7 @@ form.addEventListener('submit', (event) => {
 });
 
 // Local storage
+window.onload = function() {
+    localStorage.setItem("name", $('#inputName').val());
+    localStorage.setItem("email", $('#inputEmail').val());   
+}
