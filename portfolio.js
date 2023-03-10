@@ -106,7 +106,7 @@ projects.forEach((project) => {
     const techText = document.createElement('span');
     techText.classList.add('tab');
     techItem.append(techText);
-    techText.innerHTML = `${project.tech[i]}`;
+    techText.innerHTML = `${project.tech[0]}`; // Hard coded line
   }
 
   // create popups
