@@ -15,8 +15,6 @@ body {
 h1 {
   font-size: 2.5rem;
   color: #172b4d;
-  animation-duration: 3s;
-  animation-name: slidein;
 }
 
 @keyframes slidein {
