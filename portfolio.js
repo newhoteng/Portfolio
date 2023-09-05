@@ -22,7 +22,7 @@ const projects = [
     desc: 'A simple "To-do list" app that allows users to add, check off, and delete daily tasks. It is built with HTML, CSS, JavaScript and packaged using webpack',
     image: 'project-images/To-Do.png',
     tech: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
-    live: 'newhoteng.github.io/To-do-list/',
+    live: 'https://newhoteng.github.io/To-do-list/',
     source: 'https://github.com/newhoteng/To-do-list',
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     desc: 'Bookstore is a Single Page Application(SPA) website that displays a list of books and allows users to add or remove a selected book.',
     image: 'project-images/Bookstore.png',
     tech: ['React', 'JSX', 'Redux', 'CSS', 'SPA'],
-    live: 'newhoteng.github.io/Bookstore/',
+    live: 'https://newhoteng.github.io/Bookstore/',
     source: 'https://github.com/newhoteng/Bookstore',
   },
   {
