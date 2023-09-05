@@ -54,7 +54,7 @@ const projects = [
     desc: 'Spa Services is a web application that requires users to register an account and login. Users are then able to reserve a spa service and add a spa service of their choice',
     image: 'project-images/SpaServices.png',
     tech: ['React', 'Ruby on Rails', 'Redux', 'React-Router'],
-    live: 'https://github.com/newhoteng/spa-booking-frontend',
+    live: '',
     source: 'https://github.com/newhoteng/spa-booking-frontend',
   },
 ];
