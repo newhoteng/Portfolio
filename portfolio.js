@@ -38,7 +38,7 @@ const projects = [
     desc: 'A web application that allow users to book rockets and join selected space missions.',
     image: 'project-images/SpaceTravelers.png',
     tech: ['React', 'Redux', 'React-Router', 'React-testing-library'],
-    live: 'space-travelers-hub-36vw.onrender.com/',
+    live: 'https://space-travelers-hub-36vw.onrender.com/',
     source: 'https://github.com/newhoteng/Space-travelers-hub',
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     desc: 'Metrics is a single-page-application built with react and redux. It fetches air quality data for selected cities from an API and displays the cities with their corresponding air quality index (aqi) on the homepage. Clicking on a city on the homepage directs users to a details page which lists the concentration of the various pollutants.',
     image: 'project-images/Metrics.png',
     tech: ['React', 'Redux', 'React-Router', 'React-testing-library'],
-    live: 'metrics-59av.onrender.com/',
+    live: 'https://metrics-59av.onrender.com/',
     source: 'https://github.com/newhoteng/Metrics',
   },
   {
